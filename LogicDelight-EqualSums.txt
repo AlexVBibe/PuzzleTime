@@ -1,0 +1,4 @@
+Is it possible to write down all natural numbers starting from 1
+to 30 in a table which has 5 rows and 6 columns in such a way that
+1) sums of numbers of each column was the same;
+2) sums of numbers of each row was the same;

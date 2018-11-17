@@ -1,0 +1,7 @@
+Two players A and B are watching as a boy is tossing a coin.
+The player A says, lets say that we write down results of
+tosses so that if it is a head we write H and if it is tail
+we write T. I think that a sequcen HHH has more chances to
+appear than HTH, so playes A bets that HHH will be first and
+player B bets that HTH will appear first.
+How is going to win A or B?

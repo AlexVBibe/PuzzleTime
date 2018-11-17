@@ -1,0 +1,5 @@
+A square field split into 100 equal cells 9 of which are 
+filled with grass. It is known that in a year the grass will spread
+into cells which have at least two filled with grass neighbours.
+Please prove that considering condition stated above the field 
+will never be filled with a grass or will it?
