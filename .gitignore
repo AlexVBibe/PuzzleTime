@@ -1,22 +1,9 @@
 
-\.vs/PuzzleTime/v15/Server/sqlite3/
+\.vs/
 
-Concurrency/obj/Debug/
+Debug
+packages
+obj
 
-Finalizers/bin/Debug/
+*.user
 
-Pirates/bin/Debug/
-
-Pirates/obj/Debug/
-
-RotateArray/bin/Debug/
-
-RotateArray/obj/Debug/
-
-Zombit/bin/Debug/
-
-Zombit/obj/Debug/
-
-Concurrency/bin/Debug/
-
-Finalizers/obj/Debug/
