@@ -60,4 +60,49 @@ namespace LongestPalindromicSubstring
 
         }
     }
+
+    /**
+     * @param {string} s
+     * @return {string}
+     */
+    /*
+
+    var longestPalindrome = function(s) 
+    {
+        let size = s.length;
+        let index = 0;
+        let result = '';
+        while(index < size) {
+            let str1 = poliLength(s, index, index);
+            let str2 = poliLength(s, index, index + 1);
+            let str = str1.length > str2.length
+                ? str1
+                : str2;
+            
+            result = result.length > str.length
+                ? result
+                : str;
+            index++;
+        }
+        return result;
+    };
+
+    var poliLength = function(s, lindex, rindex)
+    {
+        let size = s.length;
+        let start = lindex;
+        let length = 1;
+        while(lindex >= 0 && 
+              rindex < size &&
+             s[lindex] == s[rindex]) {
+            start = lindex;
+            length = Math.max(rindex - lindex + 1, 1);
+            lindex--;
+            rindex++;
+        }
+
+        var result = s.substring(start, start + length);
+        return result;
+    };
+*/
 }

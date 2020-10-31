@@ -42,4 +42,5 @@ namespace MajorityElement
 
             return 0;
         }
+    }
 }

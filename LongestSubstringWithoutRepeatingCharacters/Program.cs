@@ -67,4 +67,42 @@ namespace LongestSubstringWithoutRepeatingCharacters
             return max;
         }
     }
+
+    /**
+     * @param {string} s
+     * @return {number}
+     */
+    /*
+    var lengthOfLongestSubstring = function(s)
+    {
+        let sequence = [...s];
+        let size = sequence.length;
+            if (size == 0)
+        return 0;
+        if (size == 1)
+        return 1;
+        
+        let maxLength = 1;
+        let index = 1;
+        let length = 1;
+        let start = 0;
+            while(index<size) {
+            let currSymbol = sequence[index];
+            let jindex = index - 1;
+            while(jindex >= start && sequence[jindex] !== currSymbol) jindex--;
+            if (jindex<start) { // we walked whole string no dups
+                length++;
+                if (maxLength<length) {
+                    maxLength = length;
+                }
+            } else {
+                let oldStart = start
+                start = jindex + 1;
+                length = length - (start - oldStart) + 1;
+            }
+            index++;
+        }
+        return maxLength;
+    };
+    */
 }
