@@ -19,13 +19,77 @@ namespace LongestPalindromicSubstring
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine($"Longest Palindrome {Solution3.LongestPalindrome("babad")}");
         }
+    }
+
+    public class Solution3
+    {
+        public static string LongestPalindrome(string s)
+        {
+            var letters = s.ToArray();
+            var size = letters.Length;
+            var result = string.Empty;
+            for (var i = 0; i < size; i++)
+            {
+                var palindrome = IsPalindrome(letters, i, i, size);
+                var palindrome2 = IsPalindrome(letters, i, i + 1, size);
+                if (palindrome.Length < palindrome2.Length)
+                    palindrome = palindrome2;
+                if (palindrome.Length > result.Length)
+                {
+                    result = palindrome;
+                }
+            }
+
+            return result;
+        }
+
+        private static string IsPalindrome(char[] letters, int l, int r, int size)
+        {
+            while (l >= 0 && r < size && letters[l] == letters[r])
+            {
+                l--;
+                r++;
+            }
+            return new string(letters.Skip(l + 1).Take(r - l - 1).ToArray());
+        }
+    }
+
+    public class Solution2
+    {
+        public static string LongestPalindrome(string s)
+        {
+            if (IsPalindrome(s)) return s;
+            var size = 0;
+            var palindrome = "";
+            for (var i = 1; i <= s.Length; i++)// asdvsdrabacaba
+            {
+                for (var j = 0; j < i; j++)
+                {
+                    if (s[j] != s[i - 1]) continue;
+                    var subString = s.Substring(j, i - j);
+                    if (!IsPalindrome(subString) || size >= subString.Length) continue;
+
+                    size = subString.Length;
+                    palindrome = subString;
+                    break; // early exit as longest found
+                }
+            }
+
+            return palindrome;
+        }
+        static bool IsPalindrome(string s)
+        {
+            var reversed = new string(s.Reverse().ToArray());
+            return s == reversed;
+        }
+
     }
 
     public class Solution
     {
-        public string LongestPalindrome(string s)
+        public static string LongestPalindrome(string s)
         {
             var letters = s.ToArray();
             var size = letters.Length;
@@ -48,7 +112,7 @@ namespace LongestPalindromicSubstring
             return max;
         }
 
-        private string ReturnPolindrom(char[] letters, int left, int right, int size)
+        private static string ReturnPolindrom(char[] letters, int left, int right, int size)
         {
             while (left >= 0 && right < size && letters[left] == letters[right])
             {

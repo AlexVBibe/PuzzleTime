@@ -96,7 +96,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MoveZeroes", "MoveZeroes\Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PowerOfThree", "PowerOfThree\PowerOfThree.csproj", "{F0AEB4E4-F920-4CC0-8A03-8E96265EC17E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DB_CountZeros", "DB_CountZeros\DB_CountZeros.csproj", "{33952DA8-BF57-4E3B-8008-5E799A3C736D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DB_CountZeros", "DB_CountZeros\DB_CountZeros.csproj", "{33952DA8-BF57-4E3B-8008-5E799A3C736D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MedianOfTwoSortedArrays", "MedianOfTwoSortedArrays\MedianOfTwoSortedArrays.csproj", "{ABEE84A7-55CF-459E-A2BA-B124DCBA703E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CombinationSum", "CombinationSum\CombinationSum.csproj", "{AB1D4A56-D786-4B16-A719-5D744A575625}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -280,6 +284,14 @@ Global
 		{33952DA8-BF57-4E3B-8008-5E799A3C736D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{33952DA8-BF57-4E3B-8008-5E799A3C736D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{33952DA8-BF57-4E3B-8008-5E799A3C736D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEE84A7-55CF-459E-A2BA-B124DCBA703E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEE84A7-55CF-459E-A2BA-B124DCBA703E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEE84A7-55CF-459E-A2BA-B124DCBA703E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEE84A7-55CF-459E-A2BA-B124DCBA703E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB1D4A56-D786-4B16-A719-5D744A575625}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB1D4A56-D786-4B16-A719-5D744A575625}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB1D4A56-D786-4B16-A719-5D744A575625}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB1D4A56-D786-4B16-A719-5D744A575625}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
